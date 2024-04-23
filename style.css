@@ -1,0 +1,22 @@
+header .container-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:root {
+    --roxo-da-um-play:#8C5CF2;
+    --verde-da-um-play: #50D5B7;
+}
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
