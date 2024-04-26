@@ -1,10 +1,7 @@
-@font-face {
-    font-family: "Poppins";
-    
-    src: url(https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-    
-}
+
  
+
+
 header .container-grid {
     display: flex;
     justify-content: space-between;
@@ -23,13 +20,19 @@ html {
 .banner {
     height: 100vh;
 
-
+    
     background-image: linear-gradient(90deg, #0000) url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png)
-
+    
+    
 }
 
-.header {
-    height: 165px;
+
+header {
+    height: 170px;
+}
+
+header img {
+    width: 150px;
 }
 
 header button {
@@ -57,6 +60,7 @@ header .container-grid {
 
 }
 
+/*para mexer nas letras do menu*/
 .menu a {
     font-size: 18px;
     font-family: "Anton";
@@ -69,29 +73,119 @@ header .container-grid {
 }
 
 .menu a:hover {
-    text-decoration-color: white;
+    text-decoration-color:black;
 }
 
 /*para mexer na foto do banner*/
 .conteudo-banner { 
-    background-image: url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png);
+    background: linear-gradient(90deg, rgba(0,0,0,0.6643907563025211) 0%, rgba(0,0,0,1) 100%) , url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png);
 
-    height: 800px;
-    width: 100%;
-    
+    background-size: cover;
 
-    
+    height: 150vh;
+
+
 }
+
 
 /*configuração da fonte*/
 .conteudo-banner p{
-    font-size: 40px;
-    font-family: "Poppins";
+    font-size: 30px;
+    font-family: "Anton";
 
     color: white;
-    text-transform: uppercase;
+    
     text-align: right;
+
 }
 
+/*imagem sobre*/
+    
+    /* height: 200px; */
+    /* border: 1px solid #ccc; */
 
 
+/*configuração sobre*/
+#sobre {
+    height: 500px;
+    
+
+    display: flex;
+    flex-direction: column;
+    
+    text-align: left;
+}
+
+#sobre img {
+width: 200px;
+flex-direction: column;
+}
+
+h2 {
+    font-family: "Anton";
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 70px;
+}
+
+#sobre p{
+    font-family: "Poppins";
+
+    font-size: 17px;
+
+    text-align: right;
+
+    line-height: 1.5;
+    }
+
+    .sobre {
+        height: 50%;
+        width: 100%;
+
+    }
+
+    #cases {
+        text-align: center;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+    }
+
+    
+    #cases h2 {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+
+    .container-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+      
+      .card {
+        width: 200px; /* Largura dos cards */
+        height: 220px; /* Altura dos cards */
+        border: 1px solid #ccc;
+        margin: 70px; /* Margem entre os cards */
+        text-align: center; /* Centraliza o texto horizontalmente */
+        line-height: 150px; /* Centraliza o texto verticalmente */
+      }
+
+
+
+      .feedbacks img {
+        height: 2%;
+        width:2px;
+      }
+
+
+
+
+
+
+
+
+      
