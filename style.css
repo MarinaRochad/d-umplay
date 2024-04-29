@@ -1,6 +1,22 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
 
- 
+.container-grid {
+    width: 70vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
+.faixa-verde {
+    height: 20px;
+    background-color: var(--verde-da-um-play);
+    width: 100%;
+}
 
 header .container-grid {
     display: flex;
@@ -17,22 +33,21 @@ html {
     scroll-behavior: smooth;
 }
 
-.banner {
-    height: 100vh;
 
-    
-    background-image: linear-gradient(90deg, #0000) url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png)
-    
-    
-}
+
 
 
 header {
-    height: 170px;
+    height: 165px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
+
+/*logo*/
 header img {
-    width: 150px;
+    width: 90px;
+    align-items: center;
 }
 
 header button {
@@ -57,6 +72,7 @@ header .container-grid {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -78,7 +94,7 @@ header .container-grid {
 
 /*para mexer na foto do banner*/
 .conteudo-banner { 
-    background: linear-gradient(90deg, rgba(0,0,0,0.6643907563025211) 0%, rgba(0,0,0,1) 100%) , url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png);
+    background:linear-gradient(90deg, rgba(0,0,0,0.6643907563025211) 0%, rgba(52,50,50,1) 100%), url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png);
 
     background-size: cover;
 
@@ -96,6 +112,7 @@ header .container-grid {
     color: white;
     
     text-align: right;
+    align-items: center;
 
 }
 
@@ -114,6 +131,7 @@ header .container-grid {
     flex-direction: column;
     
     text-align: left;
+   
 }
 
 #sobre img {
@@ -161,7 +179,7 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-    
+        
     }
 
       
@@ -177,9 +195,13 @@ h2 {
 
 
       .feedbacks img {
-        height: 2%;
+        height: 1%;
         width:2px;
       }
+
+
+
+      
 
 
 
