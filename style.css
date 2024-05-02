@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    }
+
+}
 
 .container-grid {
     width: 70vw;
@@ -89,54 +89,57 @@ header .container-grid {
 }
 
 .menu a:hover {
-    text-decoration-color:black;
+    text-decoration-color: black;
 }
 
 /*para mexer na foto do banner*/
-.conteudo-banner { 
-    background:linear-gradient(90deg, rgba(0,0,0,0.6643907563025211) 0%, rgba(52,50,50,1) 100%), url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png);
+.conteudo-banner {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6643907563025211) 0%, rgba(52, 50, 50, 1) 100%), url(img/Firefly\ escritório\ no\ tema\ roxo\ e\ verde\ e\ azul\ escuro\ tecnológico\ 18886\ 1.png);
 
     background-size: cover;
 
-    height: 150vh;
+    height: 160vh;
 
 
 }
 
 
 /*configuração da fonte*/
-.conteudo-banner p{
+.conteudo-banner p {
     font-size: 30px;
     font-family: "Anton";
 
     color: white;
-    
+
     text-align: right;
     align-items: center;
 
 }
 
 /*imagem sobre*/
-    
-    /* height: 200px; */
-    /* border: 1px solid #ccc; */
+
+/* height: 200px; */
+/* border: 1px solid #ccc; */
 
 
 /*configuração sobre*/
 #sobre {
-    height: 500px;
-    
+    height: 800px;
+
 
     display: flex;
     flex-direction: column;
-    
+    padding: 100px 25%;
+    justify-content: space-between;
+
     text-align: left;
-   
+
 }
 
 #sobre img {
-width: 200px;
-flex-direction: column;
+    width: 200px;
+    flex-direction: column;
+    justify-content: left;
 }
 
 h2 {
@@ -146,7 +149,9 @@ h2 {
     margin-bottom: 70px;
 }
 
-#sobre p{
+
+
+#sobre p {
     font-family: "Poppins";
 
     font-size: 17px;
@@ -154,60 +159,99 @@ h2 {
     text-align: right;
 
     line-height: 1.5;
-    }
+}
 
-    .sobre {
-        height: 50%;
-        width: 100%;
+.sobre {
+    height: 50%;
+    width: 100%;
 
-    }
+}
 
-    #cases {
-        text-align: center;
-        padding-bottom: 100px;
-        margin-bottom: 100px;
-    }
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+}
 
-    
-    #cases h2 {
-        margin-bottom: 70px;
-        text-align: center;
-    }
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
 
+.card h2 {
+    font-family: "Anton";
+    font-size: 28px;
+    text-align: left;
+}
 
-    .container-cards {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
+.card:hover {
+    height: 400px;
+}
 
-      
-      .card {
-        width: 200px; /* Largura dos cards */
-        height: 220px; /* Altura dos cards */
-        border: 1px solid #ccc;
-        margin: 70px; /* Margem entre os cards */
-        text-align: center; /* Centraliza o texto horizontalmente */
-        line-height: 150px; /* Centraliza o texto verticalmente */
-      }
-
-
-
-      .feedbacks img {
-        height: 1%;
-        width:2px;
-      }
-
-
-
-      
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 0px;
+}
 
 
+.card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    transition: 0.5s;
+}
+
+.card .img-box img {
+    width: 100%;
+    height: 216px;
+    object-fit: cover;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    height: 42px;
+
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+
+}
+
+.card .ler-mais {
+    background: linear-gradient(90deg, #456036, #E7FF99);
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.content p {
+    font-family: "Poppins";
+}
 
 
-
-
-
-
-      
+.feedbacks img {
+    height: 1%;
+    width: 2px;
+}
