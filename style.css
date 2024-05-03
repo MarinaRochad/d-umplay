@@ -1,7 +1,7 @@
 /* Reset CSS */
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 
 }
@@ -167,6 +167,20 @@ h2 {
 
 }
 
+h3 {
+    font-family: "Anton";
+    font-size: 25px;
+    text-align: center;
+    line-height: 2;
+    height: 50%;
+    width: 100%;
+}
+
+.Cases-de-sucesso {
+    height: 50%;
+    width: 100%;
+}
+
 .cards {
     display: flex;
     justify-content: space-between;
@@ -187,8 +201,12 @@ h2 {
     transition: 0.5s;
 }
 
+.card h3 {
+    font-family: "Poppins";
+}
+
 .card h2 {
-    font-family: "Anton";
+    font-family: "Poppins";
     font-size: 28px;
     text-align: left;
 }
@@ -239,19 +257,194 @@ h2 {
 }
 
 .card .ler-mais {
-    background: linear-gradient(90deg, #456036, #E7FF99);
+    background-color: var(--verde-da-um-play);
     padding: 12px;
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
+    font-family: "Poppins";
 }
+
 
 .content p {
     font-family: "Poppins";
 }
 
 
-.feedbacks img {
-    height: 1%;
-    width: 2px;
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 90px;
+    margin-bottom: 90px;
+}
+
+#contato h2 {
+    margin-bottom: 50px;
+}
+
+#contato form {
+    width: 50%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 70px;
+    background-color: #987CD3;
+
+    color: white;
+    font-family: "Poppins";
+    font-size: 17px;
+}
+
+.campo {
+    width: 50%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+.campo-descricao {
+    width: 50%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+.campo input {
+    height: 30px;
+
+    color: white;
+    background-color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color: white;
+    background-color: #fff;
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+
+}
+
+.campo label, .campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input, .campo-descricao textarea {
+    font-family: "Poppins";
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--verde-da-um-play);
+}
+
+#contato form button {
+    height: 30px;
+    width: 50%;
+
+    background-color: var(--verde-da-um-play);
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Poppins";
+    font-weight: 700; /*Bold*/
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms; 
+}
+
+#contato form button:hover {
+    background-color: var(--roxo-da-um-play);
+}
+
+.conteudo-banners{
+    background: url(img/banner.png);
+
+    background-size: cover;
+
+    height: 160vh;
+
+
+}
+
+footer {
+    height: 290px;
+
+    background-color: #fff;
+}
+
+footer .container-grid {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociais {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icones-redes {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icones-redes a {
+    color: #000000;
+}
+
+.icones-redes a:hover {
+    color: var(--verde-da-um-play)
 }
