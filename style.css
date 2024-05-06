@@ -162,23 +162,25 @@ h2 {
 }
 
 .sobre {
-    height: 50%;
+    height: 80%;
     width: 100%;
 
 }
+
 
 h3 {
     font-family: "Anton";
     font-size: 25px;
     text-align: center;
-    line-height: 2;
-    height: 50%;
+    
+    height: 100%;
     width: 100%;
 }
 
 .Cases-de-sucesso {
-    height: 50%;
+    height: 80%;
     width: 100%;
+    margin-top: 90px;
 }
 
 .cards {
@@ -276,10 +278,19 @@ h3 {
     text-align: center;
 
     padding-bottom: 90px;
-    margin-bottom: 90px;
+    margin-top: 90px;
 }
 
 #contato h2 {
+    margin-bottom: 50px;
+    width: 50%;
+   
+    text-align: right;
+
+   
+}
+
+#cases-de-sucesso {
     margin-bottom: 50px;
 }
 
@@ -329,7 +340,7 @@ h3 {
 .campo input {
     height: 30px;
 
-    color: white;
+    color: #000000;
     background-color: #fff;
 
     border: none;
@@ -341,8 +352,8 @@ h3 {
 }
 
 .campo-descricao textarea {
-    color: white;
-    background-color: #fff;
+    color: #000000;
+    background-color: #000000;
 
     border: none;
     border-radius: 4px;
@@ -366,7 +377,7 @@ h3 {
 
 .campo input::placeholder,
 .campo-descricao textarea::placeholder {
-    color: #a0a0a0;
+    color:#a0a0a0;
 }
 
 .campo input:focus,
@@ -404,7 +415,7 @@ h3 {
 
     background-size: cover;
 
-    height: 160vh;
+    height: 140vh;
 
 
 }
@@ -427,9 +438,12 @@ footer .container-grid {
     height: 50%;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    justify-items: center;    
     align-items: center;
+   
+   
+    
 }
 
 
@@ -437,14 +451,68 @@ footer .container-grid {
     width: 240px;
 
     display: flex;
-    justify-content: space-between;
+
+    justify-items: center;  
+    gap:4rem;
     align-items: center;
-}
+
+    }
 
 .icones-redes a {
-    color: #000000;
+    color: #b52020;
 }
 
 .icones-redes a:hover {
     color: var(--verde-da-um-play)
 }
+
+@media screen and (max-width: 1300px) {
+    header {
+     position: relative;
+    }
+
+    header button {
+        width: 50px;
+    
+        display: unset;
+    
+        background: none;
+        border: none;
+    
+       }
+    
+       header svg {
+        fill: white;
+       }
+    
+    
+nav.menu {
+    height: 500px;
+    width: 350px;
+
+    padding: 0px 30px;
+
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #000000ba;
+
+    position: absolute;
+    top: 165px;
+    right: 0px;
+}
+
+#sobre {
+    padding: 100px 15%;
+}
+
+.card {
+    height: 320px;
+    width: 300px;
+}
+
+#contato form {
+    width: 75%;
+}
+}
+ 
