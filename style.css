@@ -435,6 +435,7 @@ footer .container-grid {
 }
 
 .redes-sociais {
+    width: 100%;
     height: 50%;
 
     display: flex;
@@ -448,23 +449,24 @@ footer .container-grid {
 
 
 .icones-redes {
-    width: 240px;
+    width: 100%;
 
     display: flex;
 
-    justify-items: center;  
-    gap:4rem;
+    justify-content: space-between;  
+    
     align-items: center;
 
     }
 
 .icones-redes a {
-    color: #b52020;
+    color: #000000;
 }
 
 .icones-redes a:hover {
     color: var(--verde-da-um-play)
 }
+
 
 @media screen and (max-width: 1300px) {
     header {
