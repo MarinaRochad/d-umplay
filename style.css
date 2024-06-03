@@ -131,7 +131,6 @@ header .container-grid {
     flex-direction: column;
     padding: 100px 25%;
     justify-content: space-between;
-
     text-align: left;
 
 }
@@ -158,6 +157,7 @@ h2 {
 
     text-align: right;
 
+    display: contents;
     line-height: 1.5;
 }
 
@@ -465,6 +465,16 @@ footer .container-grid {
 
 .icones-redes a:hover {
     color: var(--verde-da-um-play)
+}
+
+/* //js menu */
+.menu-fechado {
+    display: none;
+}
+
+
+#icone-barras {
+    display: none;
 }
 
 
